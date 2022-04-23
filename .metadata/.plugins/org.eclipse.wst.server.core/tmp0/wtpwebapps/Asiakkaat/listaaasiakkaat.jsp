@@ -12,9 +12,9 @@
 <table id="listaus">
 	<thead>	
 		<tr>
-			<th class="hakusana">Hakusana:</th>
+			<th class="oikealle">Hakusana:</th>
 			<th colspan=2><input type="text" id="hakusana"></th>
-			<th><input type="button" value="Hae" id="nappi"></th>
+			<th><input type="button" value="Hae" id="hakunappi"></th>
 		</tr>			
 		<tr>
 			<th>Etunimi</th>
@@ -28,7 +28,22 @@
 </table>
 <script>
 $(document).ready(function(){
-	$.ajax({url:"asiakkaat", type:"GET", dataType:"json", success:function(result){	
+	
+	haeAsiakkaat();
+	$("#hakunappi").click(function(){		
+		haeAsiakkaat();
+	});
+	$(document.body).on("keydown", function(event){
+		  if(event.which==13){ //Enteriä painettu, ajetaan haku
+			  haeAsiakkaat();
+		  }
+	});
+	$("#hakusana").focus();//viedään kursori hakusana-kenttään sivun latauksen yhteydessä
+});	
+
+function haeAsiakkaat(){
+	$("#listaus tbody").empty();
+	$.ajax({url:"asiakkaat/"+$("#hakusana").val(), type:"GET", dataType:"json", success:function(result){//Funktio palauttaa tiedot json-objektina		
 		$.each(result.asiakkaat, function(i, field){  
         	var htmlStr;
         	htmlStr+="<tr>";
@@ -40,14 +55,7 @@ $(document).ready(function(){
         	$("#listaus tbody").append(htmlStr);
         });	
     }});
-
-$("#nappi").click(function () {
-		var value = $("#hakusana").val().toLowerCase();
-	    $("#listaus tbody tr").filter(function() {
-	      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-	    });
-	 });
-});	
+}
 
 </script>
 </body>
