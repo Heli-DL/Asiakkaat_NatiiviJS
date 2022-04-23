@@ -1,0 +1,16 @@
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: grey;
+}
+
+th {
+  height: 70px;
+}
+
+td {
+	padding: 5px;
+}

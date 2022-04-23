@@ -1,0 +1,12 @@
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: grey;
+}
+
+tr {
+	padding: 5px;
+}
