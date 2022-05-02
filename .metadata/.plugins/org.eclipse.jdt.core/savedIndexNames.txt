@@ -9,7 +9,6 @@ INDEX VERSION 1.131+C:\Users\helid\OneDrive\Documents\Tietojenkäsittely\Ohjelmo
 4205654752.index
 1628745577.index
 1454910237.index
-1654984309.index
 1742293520.index
 374088388.index
 1271297842.index
