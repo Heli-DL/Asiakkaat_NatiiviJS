@@ -15,7 +15,7 @@
 	<table>
 		<thead>	
 			<tr>
-				<th colspan="5"><span><a href= "listaaasiakkaat.jsp">Takaisin listaukseen </a></span></th>				
+				<th colspan="5"><span id="takaisin">Takaisin listaukseen</span></th>				
 			</tr>		
 			<tr>
 				<th>Etunimi</th>
@@ -40,6 +40,7 @@
 </body>
 <script>
 $(document).ready(function(){
+	
 	$("#takaisin").click(function(){
 		document.location="listaaasiakkaat.jsp";
 	});
@@ -55,11 +56,11 @@ $(document).ready(function(){
 			},
 			puhelin:  {
 				required: true,
-				minlength: 7
+				minlength: 5
 			},	
 			sposti:  {
 				required: true,
-				minlength: 4
+				email: true
 			}	
 		},
 		messages: {
@@ -77,22 +78,24 @@ $(document).ready(function(){
 			},
 			sposti: {
 				required: "Puuttuu",		
-				minlength: "Liian lyhyt"		
+				email: "Ei kelpaa"		
 			}
 		},			
 		submitHandler: function(form) {	
 			lisaaTiedot();
 		}		
-	}); 	
+	}); 
+	$("#etunimi").focus(); //kursori etunimi-kentt‰‰n sivun latauksen yhteydess‰
 });
 function lisaaTiedot(){	
 	var formJsonStr = formDataJsonStr($("#tiedot").serializeArray()); 
+	console.log(formJsonStr);
 	$.ajax({url:"asiakkaat", data:formJsonStr, type:"POST", dataType:"json", success:function(result) {        
 		if(result.response==0){
       	$("#ilmo").html("Asiakkaan lis‰‰minen ep‰onnistui.");
       }else if(result.response==1){			
       	$("#ilmo").html("Asiakkaan lis‰‰minen onnistui.");
-      	$("#etunimi", "#sukunimi", "#puhelin", "#sposti").val("");
+      	$("#etunimi, #sukunimi, #puhelin, #sposti").val("");
 		}
   }});	
 }

@@ -1,0 +1,52 @@
+
+May 07, 2022 15:11:10.320 NEW SESSION
+May 07, 2022 15:11:10.320 [Parent 44496, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 16:28:09.707 [Parent 44496, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 16:28:09.711 [Parent 44496, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 17:01:40.916 
+May 08, 2022 17:01:40.917 ###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+May 08, 2022 17:01:40.917 
+May 08, 2022 17:09:54.716 
+May 08, 2022 17:09:54.717 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.717 
+May 08, 2022 17:09:54.717 
+May 08, 2022 17:09:54.717 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.718 
+May 08, 2022 17:09:54.718 
+May 08, 2022 17:09:54.718 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.718 
+May 08, 2022 17:09:54.719 
+May 08, 2022 17:09:54.719 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.719 
+May 08, 2022 17:09:54.719 
+May 08, 2022 17:09:54.720 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.720 
+May 08, 2022 17:09:54.720 
+May 08, 2022 17:09:54.721 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.721 
+May 08, 2022 17:09:54.721 
+May 08, 2022 17:09:54.721 ###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.721 
+May 08, 2022 17:09:54.725 
+May 08, 2022 17:09:54.725 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.726 
+May 08, 2022 17:09:54.726 
+May 08, 2022 17:09:54.726 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.726 
+May 08, 2022 17:09:54.726 
+May 08, 2022 17:09:54.727 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.727 
+May 08, 2022 17:09:54.727 
+May 08, 2022 17:09:54.728 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+May 08, 2022 17:09:54.728 
+May 08, 2022 17:09:54.728 [Parent 54780, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 17:09:54.728 [Parent 54780, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 17:09:54.729 [Parent 54780, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 17:09:54.731 [Parent 54780, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 17:09:54.739 [Parent 54780, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+May 08, 2022 17:09:54.805 
+May 08, 2022 17:09:54.806 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+May 08, 2022 17:09:54.806 
+
+May 08, 2022 17:37:10.924 NEW SESSION
+May 08, 2022 17:37:10.924 [Parent 46564, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

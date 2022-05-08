@@ -3,11 +3,6 @@ body{
 	font-size: 15px;
 }
 
-a {
-	color: white;
-	text-decoration: none;	
-}
-
 table {
 	border: 1px solid #069A8E;
 	border-spacing: 1px;
@@ -31,5 +26,10 @@ tbody tr:nth-child(even) {
 }
 .poista {
 	color: red;
+	cursor: pointer;
+}
+
+#uusiAsiakas, #takaisin {
+	color: white;
 	cursor: pointer;
 }
