@@ -125,7 +125,7 @@ public class Dao {
 	
 	public Asiakas etsiAsiakas(int asiakas_id) {
 		Asiakas asiakas = null;
-		sql = "SELECT asiakas_id, etunimi, sukunimi, puhelin, sposti FROM asiakkaat WHERE asiakas_id=?";
+		sql = "SELECT * FROM asiakkaat WHERE asiakas_id=?";
 		try {
 			con = yhdista();
 			if(con!=null) {
@@ -148,7 +148,7 @@ public class Dao {
 		}
 		return asiakas;
 	}
-	public boolean muutaAsiakas(Asiakas asiakas, int asiakas_id) {
+	public boolean muutaAsiakas(Asiakas asiakas) {
 		boolean paluuArvo = true;
 		sql = "UPDATE asiakkaat SET etunimi=?, sukunimi=?, puhelin=?, sposti=? WHERE asiakas_id=?";
 		try {
@@ -158,7 +158,7 @@ public class Dao {
 			stmtPrep.setString(2, asiakas.getSukunimi());
 			stmtPrep.setString(3, asiakas.getPuhelin());
 			stmtPrep.setString(4, asiakas.getSposti());
-			stmtPrep.setInt(5, asiakas_id);
+			stmtPrep.setInt(5, asiakas.getAsiakas_id());
 			stmtPrep.executeUpdate();
 	        con.close();		
 		} catch (Exception e) {

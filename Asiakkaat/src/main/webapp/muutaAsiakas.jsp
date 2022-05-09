@@ -22,7 +22,7 @@
 				<th>Sukunimi</th>
 				<th>Puhelin</th>
 				<th>Sposti</th>
-				<th></th>
+				<th>Hallinta</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -35,7 +35,7 @@
 			</tr>
 		</tbody>
 	</table>
-	<input type ="hidden" name="vanhaasiakas_id" id="vanhaasiakas_id">
+	<input type ="hidden" name="asiakas_id" id="asiakas_id">
 </form>
 <span id="ilmo"></span>
 </body>
@@ -44,22 +44,20 @@ $ (document).ready(function(){
 	$("#takaisin").click(function(){
 		document.location="listaaasiakkaat.jsp";
 	});
+	
+	$("#etunimi").focus();
+	
 	var asiakas_id = requestURLParam("asiakas_id");
 	$.ajax({url:"asiakkaat/haeyksi/"+asiakas_id, type:"GET", dataType:"json", success:function(result) {
-		$("#vanhaasiakas_id").val(result.asiakas_id);
-		$("#asiakas_id").val(result.asiakas_id);
 		$("#etunimi").val(result.etunimi);
 		$("#sukunimi").val(result.sukunimi);
 		$("#puhelin").val(result.puhelin);
 		$("#sposti").val(result.sposti);
+		$("#asiakas_id").val(result.asiakas_id);
 	}});
 	
 	$("#tiedot").validate({						
-		rules: {
-			asiakas_id:  {
-				required: true,
-				minlength: 1				
-			},	
+		rules: {	
 			etunimi:  {
 				required: true,
 				minlength: 2				
@@ -77,11 +75,7 @@ $ (document).ready(function(){
 				email: true
 			}	
 		},
-		messages: {
-			asiakas_id:  {
-				required: "Puuttuu",
-				minlength: "Liian lyhyt"				
-			},	
+		messages: {	
 			etunimi: {     
 				required: "Puuttuu",
 				minlength: "Liian lyhyt"			
@@ -111,7 +105,6 @@ $ (document).ready(function(){
 	      	$("#ilmo").html("Asiakkaan päivittäminen epäonnistui.");
 	      }else if(result.response==1){			
 	      	$("#ilmo").html("Asiakkaan päivittäminen onnistui.");
-	      	$("#etunimi, #sukunimi, #puhelin, #sposti").val("");
 			}
 	  }});	
 	}
