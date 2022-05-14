@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
+C:\Users\helid\OneDrive\Documents\Tietojenkäsittely\Ohjelmointi 2\Asiakkaat - 2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2025001041.index
+\Asiakkaat\src\main\java
 C:\Users\helid\OneDrive\Documents\Tietojenkäsittely\Ohjelmointi 2\Asiakkaat\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2025001041.index
 \Asiakkaat\src\main\java

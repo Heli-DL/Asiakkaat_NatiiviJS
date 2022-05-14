@@ -1,9 +1,8 @@
-INDEX VERSION 1.4+C:\Users\helid\OneDrive\Documents\Tietojenkäsittely\Ohjelmointi 2\Asiakkaat\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-842186710.index
-1366709478.index
-189107019.index
+INDEX VERSION 1.4+C:\Users\helid\OneDrive\Documents\Tietojenkäsittely\Ohjelmointi 2\Asiakkaat - 2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1607668435.index
+3252986148.index
 374088388.index
 2025001041.index
-3461056595.index
-2025001041.index
-2097190372.index
+285132580.index
+2761279490.index
+1664651989.index

@@ -1,0 +1,13 @@
+127.0.0.1 - - [09/May/2022:17:08:50 +0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [09/May/2022:17:08:52 +0300] "GET /Asiakkaat/muutaAsiakas.jsp HTTP/1.1" 200 2881
+127.0.0.1 - - [09/May/2022:17:08:53 +0300] "GET /Asiakkaat/scripts/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/May/2022:17:08:53 +0300] "GET /Asiakkaat/css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/May/2022:17:08:53 +0300] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [09/May/2022:17:08:53 +0300] "GET /Asiakkaat/asiakkaat/haeyksi/undefined HTTP/1.1" 500 1395
+127.0.0.1 - - [09/May/2022:17:08:55 +0300] "GET /Asiakkaat/listaaasiakkaat.jsp HTTP/1.1" 200 2680
+127.0.0.1 - - [09/May/2022:17:08:55 +0300] "GET /Asiakkaat/asiakkaat/ HTTP/1.1" 200 435
+127.0.0.1 - - [09/May/2022:17:09:00 +0300] "GET /Asiakkaat/muutaAsiakas.jsp?asiakas_id=6 HTTP/1.1" 200 2881
+127.0.0.1 - - [09/May/2022:17:09:00 +0300] "GET /Asiakkaat/asiakkaat/haeyksi/6 HTTP/1.1" 200 102
+127.0.0.1 - - [09/May/2022:17:09:07 +0300] "PUT /Asiakkaat/asiakkaat HTTP/1.1" 200 16
+127.0.0.1 - - [09/May/2022:17:09:08 +0300] "GET /Asiakkaat/listaaasiakkaat.jsp HTTP/1.1" 200 2680
+127.0.0.1 - - [09/May/2022:17:09:08 +0300] "GET /Asiakkaat/asiakkaat/ HTTP/1.1" 200 440
